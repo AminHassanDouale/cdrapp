@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    ######## APP ########
+    flow-app:
+        build:
+            context: ..
+            dockerfile: .docker/Dockerfile
+            target: local
+        environment:
+            - CONTAINER_ROLE=APP
+        volumes:
+            - ../:/var/www/app:cached
+        ports:
+            - "8217:8080"
+            - "5217:5217"

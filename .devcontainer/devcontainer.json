@@ -1,0 +1,7 @@
+{
+	"name": "flow",
+	"dockerComposeFile": "../.docker/docker-compose.yml",
+	"service": "flow-app",
+	"workspaceFolder": "/var/www/app",
+	"remoteUser": "appuser",
+}
